@@ -8,6 +8,7 @@ import com.stek101.projectzulu.common.blocks.ItemFoodProjectZulu;
 import com.stek101.projectzulu.common.core.itemblockdeclaration.ItemDeclaration;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
 
 public class RawMuttonDeclaration extends ItemDeclaration {
 
@@ -25,5 +26,7 @@ public class RawMuttonDeclaration extends ItemDeclaration {
     protected void registerItem() {
         Item item = ItemList.muttonRaw.get();
         GameRegistry.registerItem(item, name);
+        OreDictionary.registerOre("listAllmeatraw", new ItemStack(item));
+        OreDictionary.registerOre("listAllmuttonraw", new ItemStack(item));
     }
 }

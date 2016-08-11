@@ -7,6 +7,7 @@ import com.stek101.projectzulu.common.api.BlockList;
 import com.stek101.projectzulu.common.api.ItemList;
 import com.stek101.projectzulu.common.blocks.ItemAloeVeraSeeds;
 import com.stek101.projectzulu.common.core.itemblockdeclaration.ItemDeclaration;
+import net.minecraftforge.oredict.OreDictionary;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 

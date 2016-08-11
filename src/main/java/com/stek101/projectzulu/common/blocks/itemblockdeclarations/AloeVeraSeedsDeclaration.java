@@ -8,6 +8,7 @@ import com.stek101.projectzulu.common.api.ItemList;
 import com.stek101.projectzulu.common.blocks.ItemAloeVeraSeeds;
 import com.stek101.projectzulu.common.core.itemblockdeclaration.ItemDeclaration;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.item.ItemStack;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -30,5 +31,6 @@ public class AloeVeraSeedsDeclaration extends ItemDeclaration {
     protected void registerItem() {
         Item item = ItemList.aloeVeraSeeds.get();
         GameRegistry.registerItem(item, name);
+        OreDictionary.registerOre("listAllseed", new ItemStack(item));
     }
 }

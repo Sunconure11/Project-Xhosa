@@ -21,6 +21,9 @@ public class CoconutMilkFragmentDeclaration extends ItemDeclaration {
 
     @Override
     protected void registerItem() {
+        Item item = BlockList.coconutMilkFragment.get();
         GameRegistry.registerItem(ItemList.coconutMilkFragment.get(), name);
+        GameRegistry.registerItem(item, name);
+        OreDictionary.registerOre("cropCoconut", new ItemStack(item));
     }
 }

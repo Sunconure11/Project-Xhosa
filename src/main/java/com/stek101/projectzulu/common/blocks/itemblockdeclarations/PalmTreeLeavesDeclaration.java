@@ -29,7 +29,7 @@ public class PalmTreeLeavesDeclaration extends BlockDeclaration {
     protected void registerBlock() {
         Block block = BlockList.palmTreeLeaves.get();
         GameRegistry.registerBlock(block, name.toLowerCase());
-        OreDictionary.registerOre("leaves", new ItemStack(block));
+        OreDictionary.registerOre("treeLeaves", new ItemStack(block));
         OreDictionary.registerOre("leavesPalm", new ItemStack(block));
     }
 }

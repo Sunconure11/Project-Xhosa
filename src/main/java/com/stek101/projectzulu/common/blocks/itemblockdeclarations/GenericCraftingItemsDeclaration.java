@@ -30,6 +30,9 @@ public class GenericCraftingItemsDeclaration extends ItemDeclaration {
     protected void registerItem() {
         Item item = ItemList.genericCraftingItems.get();
         OreDictionary.registerOre("foodSalt", new ItemStack(item, 1, ItemGenerics.Properties.Salt.meta()));
+        OreDictionary.registerOre("dustSalt", new ItemStack(item, 1, ItemGenerics.Properties.Salt.meta()));
+        OreDictionary.registerOre("materialSalt", new ItemStack(item, 1, ItemGenerics.Properties.Salt.meta()));
+        OreDictionary.registerOre("lumpSalt", new ItemStack(item, 1, ItemGenerics.Properties.Salt.meta()));
         GameRegistry.registerItem(item, name);
     }
 }

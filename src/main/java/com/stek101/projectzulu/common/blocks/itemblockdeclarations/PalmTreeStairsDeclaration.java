@@ -34,7 +34,7 @@ public class PalmTreeStairsDeclaration extends BlockDeclaration {
         if (BlockList.palmTreeStairs.isPresent()) {
             Block block = BlockList.palmTreeStairs.get();
             GameRegistry.registerBlock(block, name.toLowerCase());
-            OreDictionary.registerOre("stairsWood", new ItemStack(block));
+            OreDictionary.registerOre("stairWood", new ItemStack(block));
             OreDictionary.registerOre("stairsPalm", new ItemStack(block));
             Blocks.fire.setFireInfo(block, 5, 20);
         }

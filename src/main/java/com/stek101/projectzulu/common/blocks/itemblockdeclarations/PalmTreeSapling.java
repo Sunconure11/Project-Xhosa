@@ -29,7 +29,7 @@ public class PalmTreeSapling extends BlockDeclaration {
     protected void registerBlock() {
         Block block = BlockList.palmTreeSapling.get();
         GameRegistry.registerBlock(block, name.toLowerCase());
-        OreDictionary.registerOre("sapling", new ItemStack(block));
+        OreDictionary.registerOre("treeSapling", new ItemStack(block));
         OreDictionary.registerOre("saplingPalm", new ItemStack(block));
     }
 }

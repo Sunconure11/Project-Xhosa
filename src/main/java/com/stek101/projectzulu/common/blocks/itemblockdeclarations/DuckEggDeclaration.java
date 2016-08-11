@@ -8,6 +8,7 @@ import com.stek101.projectzulu.common.blocks.ItemDuckEgg;
 import com.stek101.projectzulu.common.core.itemblockdeclaration.ItemDeclaration;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraft.item.ItemStack;
 
 public class DuckEggDeclaration extends ItemDeclaration {

@@ -6,6 +6,7 @@ import com.stek101.projectzulu.common.blocks.ItemFoodProjectZulu;
 import com.stek101.projectzulu.common.core.itemblockdeclaration.ItemDeclaration;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
 
 public class CoconutMilkFragmentDeclaration extends ItemDeclaration {
 
@@ -21,7 +22,7 @@ public class CoconutMilkFragmentDeclaration extends ItemDeclaration {
 
     @Override
     protected void registerItem() {
-        Item item = BlockList.coconutMilkFragment.get();
+        Item item = ItemList.coconutMilkFragment.get();
         GameRegistry.registerItem(ItemList.coconutMilkFragment.get(), name);
         GameRegistry.registerItem(item, name);
         OreDictionary.registerOre("cropCoconut", new ItemStack(item));

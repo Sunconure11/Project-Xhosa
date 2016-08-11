@@ -8,6 +8,8 @@ import com.stek101.projectzulu.common.blocks.ItemFoodProjectZulu;
 import com.stek101.projectzulu.common.core.itemblockdeclaration.ItemDeclaration;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.item.ItemStack;
 
 public class ScrapMeatDeclaration extends ItemDeclaration {
 
@@ -25,5 +27,6 @@ public class ScrapMeatDeclaration extends ItemDeclaration {
     protected void registerItem() {
         Item item = ItemList.scrapMeat.get();
         GameRegistry.registerItem(item, name);
+        OreDictionary.registerOre("listAllmeatraw", new ItemStack(item));
     }
 }
